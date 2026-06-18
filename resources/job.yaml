@@ -1,0 +1,17 @@
+resources:
+  jobs:
+    test_oauth:
+      name: test_oauth_new
+      tasks:
+        - task_key: test_task
+          notebook_task:
+            notebook_path: /Workspace/Users/arbaaz.shaikh@mckesson.com/recipient_csv_mail_raj /csv_mail_group
+            source: WORKSPACE
+          environment_key: Default
+      queue:
+        enabled: true
+      environments:
+        - environment_key: Default
+          spec:
+            environment_version: "5"
+      performance_target: PERFORMANCE_OPTIMIZED
