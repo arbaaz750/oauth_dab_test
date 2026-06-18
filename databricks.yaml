@@ -11,5 +11,5 @@ targets:
     run_as:
       service_principal_name: 9f6c3e0f-8dec-4cb6-ba3d-16ebb10cc612
     permissions:
-      - user_name: "arbaaz.suleman@mckesson.com"
+      - user_name: "arbaaz.shaikh@mckesson.com"
         level: CAN_MANAGE
