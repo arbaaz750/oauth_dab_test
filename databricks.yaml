@@ -1,0 +1,15 @@
+bundle:
+  name: dmi_oauth_data
+
+include:
+  - resources/*.yaml
+
+targets:
+  uat_cp:
+    workspace:
+      host: https://adb-7954466279135483.3.azuredatabricks.net/
+    run_as:
+      service_principal_name: 9f6c3e0f-8dec-4cb6-ba3d-16ebb10cc612
+    permissions:
+      - user_name: "arbaaz.suleman@tekizma.com"
+        level: CAN_MANAGE
